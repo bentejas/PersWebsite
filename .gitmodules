@@ -1,0 +1,6 @@
+[submodule "Desktop/Website/images"]
+	path = Desktop/Website/images
+	url = https://github.com/bentejas/PersWebsite.git
+[submodule "Desktop/Website/fonts"]
+	path = Desktop/Website/fonts
+	url = https://github.com/bentejas/PersWebsite.git
