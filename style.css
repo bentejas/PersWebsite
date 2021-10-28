@@ -1,0 +1,17 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Courier New';
+    text-align: center;
+    line-height: 100vh;
+}
