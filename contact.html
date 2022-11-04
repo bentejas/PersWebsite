@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Contact Ben</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="benjamin tejas portelles (ben@bentejas.com)">
+    <meta name="description" content="portfolio for resume and website content editor developer">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&ampdisplay=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a080e2d1fb.js" crossorigin="anonymous"></script>
+</head>
+
+    
+<body onload="document.body.style.opacity='1'">
+   <div class="topnav" id="topnav">
+        <a href="index.html" id="name">BENJAMIN TEJAS</a>
+        <a href="#" class="icon" id="icon" onclick="responsiveButton()">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+        <a class="inactive" href="index.html">Home</a>
+        <a class="inactive" href="projects.html">Projects</a>
+        <a class="active" href="contact.html">Contact Me</a>
+        <label class="switch">
+            <input type="checkbox" id="darkToggle" onclick="darkMode()" aria-label="Dark Mode">
+            <span class="slider"></span>
+        </label>
+        <p style="display: inline-block"><i class="fa-solid fa-moon"></i></p>
+    </div>
+    
+    <div id="underNav">
+        <div id="mainContent">
+            <div id="contactMe">
+                <p>Get in touch with me:</p>
+            </div>
+        </div>
+        <div id="contactForm">
+            <form action="contact.php" method="post">
+                <br>
+                <label for="firstName">First name:</label><br>
+                <input type="text" id="firstName" name="firstName" class="inputBox"><br><br>
+                <label for="lastName">Last name:</label><br>
+                <input type="text" id="lastName" name="lastName" class="inputBox"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email" class="inputBox"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" class="inputBox"></textarea><br><br>
+                <input type="hidden" id="date" name="date">
+                <div id="submitBox">
+                    <button id="submitBtn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p id="socials">
+        <a href="https://ca.linkedin.com/in/benjamin-tejas-42a9691ba" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>&emsp;
+        <a href="https://github.com/bentejas" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a>&emsp;
+        <a href="https://twitter.com/bentejas" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </p>
+        <p><i class="fa-solid fa-copyright"></i> Copyright 2022, Benjamin Tejas.</p>
+    </div>
+    <script src="js/contactScript.js"></script>
+    <script>
+        const today = new Date();
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        
+        let day = days[today.getDay()];
+        let month = months[today.getMonth()];
+        let time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+        let year = today.getFullYear();
+        let monthDay = today.getDate();
+        
+        var date = day + ", " + month + " " + monthDay + ", " + year + ", " + time;
+        document.getElementById("date").value = date;
+        
+    </script>
+</body>
+    
+</html>

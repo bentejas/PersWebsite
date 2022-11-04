@@ -1,0 +1,421 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+.topnav{
+    padding: 50px;
+    text-align: center;
+}
+
+.topnav a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 1.3em;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#name{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    margin-bottom: 200px;
+}
+
+#message{
+    height: 100px;
+    width: 95%;
+}
+
+#contactMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.5em;
+}
+
+.inputBox{
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 25px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#submitBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitBtn{
+    background-color: #4681f4;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    height: 50px;
+    width: 100px;
+    border: none;
+    font-size: 1.2em;
+}
+
+#notice{
+    font-size: 1em !important;
+}
+
+#notice a{
+    color: #3b5998;
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#contentSpacing{
+    height: 200px;
+}
+
+.options a{
+    text-decoration: none;
+}
+
+.optionBtn{
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+textarea{
+    resize: none;
+}
+
+#submitBtn:hover{
+    cursor: pointer;
+    background-color: #5783db;
+}
+
+#contactForm{
+    width: 250px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: block;
+    box-shadow: 5px 10px;
+}
+
+#contactMe p{
+    font-size: 2em;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectionBox{
+    padding: 10px;
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 15px;
+    text-align: center;
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sectionBox:nth-of-type(1){
+    max-height: 600px;
+}
+
+.sectionBox:nth-of-type(2){
+    max-height: 475px;
+}
+
+.sectionBox:nth-of-type(3){
+    max-height: 475px;
+}
+
+.sectionContent{
+    text-align: left;
+}
+
+.sectionBox:hover{
+    cursor: pointer;
+    border-color: #3b5998 !important;
+}
+
+.sectionBox.expanded{
+    animation: expand 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.sectionBox{
+    animation: shrink 1.5s;
+    animation-fill-mode: forwards;
+}
+
+h1{
+    font-size: 4em;
+    animation: fadeIn 2s;
+}
+
+h2{
+    animation: fadeInSec 2s;
+}
+
+.topnav a.active{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.topnav a.inactive:hover{
+    background-color: #d3d3d3;
+}
+
+.topnav .icon{
+    display: none;
+    font-size: 1em;
+}
+
+.inactive{
+    color: black;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    vertical-align: middle;
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #CCC;
+    border-radius: 34px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #111111;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #111111;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#underNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+    color: #3b5998;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #3b5998;
+}
+
+h1 a:hover{
+    text-decoration-line: underline;
+}
+
+.thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: 1.5em;
+    margin-bottom: 100px;
+}
+
+.thanks a{
+    text-decoration: none;
+    color: #3b5998;
+}
+
+.thanks a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#socials{
+    font-size: 3em !important;
+}
+
+#socials a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #3b5998;
+}
+
+#socials a:hover{
+    color: red;
+}
+
+@keyframes expand{
+    0% {height: 65px;}
+    100% {height: 600px;}
+}
+
+@keyframes shrink{
+    0% {height: 475px;}
+    100% {height: 65px;}
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInSec{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+@font-face { font-family: 'Rubik', sans-serif; font-display: swap; }
+
+@media screen and (min-width: 600px){
+    .topnav{
+        text-align: right;
+    }
+    .topnav a{
+        display: inline-block;
+    }
+    #name{
+        float: left;
+    }
+    
+    body{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .topnav a{
+        display: none;
+    }
+    #name{
+        display: inline;
+    }
+    .topnav .icon{
+        display: block;
+    }
+    
+    .sectionBox{
+        width: 90%;
+    }
+    
+    #welcome{
+        margin-right: 10%;
+        margin-left: 10%;
+        height: 500px;
+    }
+    
+    .thanks{
+        text-align: center;
+    }
+    
+    #name{
+        padding: 0px !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .topnav.responsive {
+        text-align: center;
+    }
+    .topnav.responsive a.icon{
+        display: block;
+    }
+    .topnav.responsive a{
+        display: block;
+        text-align: center;
+    }
+}

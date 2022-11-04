@@ -1,115 +1,126 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Benjamin Tejas</title>
-		<style>
-            html, body {
-                font-family: courier;
-                background-color: #FAF9F6;
-            }
-            .namebar {
-                overflow: hidden;
-            }
+    
+<head>
+    <title>Benjamin Tejas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="benjamin tejas portelles (ben@bentejas.com)">
+    <meta name="description" content="portfolio for resume and website content editor developer benjamin tejas">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&ampdisplay=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a080e2d1fb.js" crossorigin="anonymous"></script>
+</head>
 
-            *{
-                margin: 0;
-                padding: 0;
-            }
-
-            .imgbox{
-                display: grid;
-                height: 100%;
-            }
-
-            .center-fit{
-                max-width: 2%;
-                max-height: 100vh;
-                margin: auto;
-            }
-
-            .center {
-                position: absolute;
-                left: 50%;
-                padding-top: 100px;
-                transform: translate(-50%, -50%);
-            }
-
-            .navbar {
-                overflow: hidden;
-                background-color: #FAF9F6;
-                display: inline-block;
-                vertical-align: middle;
-            }
-
-                .navbar a {
-                    float: right;
-                    display: block;
-                    color: #333;
-                    text-align: center;
-                    padding: 20px;
-                    text-decoration: none;
-                    font-family: courier;
-                    font-size: 1.2em;
-                    font-weight: bold;
-                }
-
-                    .navbar a.active {
-                        color: #00CCCC;
-                    }
-
-                    .navbar a:hover {
-                        color: #00CCCC;
-                    }
-
-            .logoimg {
-                max-width: 40%;
-                height: auto;
-                padding-left: 400px;
-                display: inline-block;
-                vertical-align: middle;
-            }
-				
-            .output {
-                color: #fdf6f0;
-                font-size: 6em;
-                font-weight: bold;
-                text-align: left;
-                text-shadow: 0.08em 0em #940f08;
-            }
-		</style>
-	</head>
-	<body style="background-color:#FAF9F6">
-			<div class="navbar" id="navbar">
-			<a href="contactme.html">Contact Me</a>
-			<a href="resume.html" >Resume</a>
-			<a href="aboutme.html">About Me</a>
-			<a href="index.html" class="active"> Home</a>
-            <div class="logoimg">
-                <img class="logoimg" src="images/logoname.png" alt="bwlogo" />
+    
+<body onload="document.body.style.opacity='1'">
+   <div class="topnav" id="topnav">
+        <a href="index.html" id="name">BENJAMIN TEJAS</a>
+        <a href="#" class="icon" id="icon" onclick="responsiveButton()">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+        <a class="active" href="index.html">Home</a>
+        <a class="inactive" href="projects.html">Projects</a>
+        <a class="inactive" href="contact.html">Contact Me</a>
+        <label class="switch">
+            <input type="checkbox" id="darkToggle" onclick="darkMode()" aria-label="Dark Mode">
+            <span class="slider"></span>
+        </label>
+        <p style="display: inline-block"><i class="fa-solid fa-moon"></i></p>
+    </div>
+    
+    <div id="underNav">
+        <div id="mainContent">
+            <div id="welcome">
+                <h1>Hi, my name is <a href="https://github.com/bentejas" target="_blank">Ben</a>.</h1>
+                <h2>I'm a Web Content Developer.</h2>
             </div>
-		</div>
-
-            <div class="imgbox">
-                <!--Socials-->
-                <a href="https://github.com/bentejas" target="_blank" rel="noreferrer noopener">
-                    <img class="center-fit" src="images/github.png" alt="gitlog" />
-                </a>
-                <br />
-                <br />
-                <a href="https://www.linkedin.com/in/benjamin-tejas-42a9691ba/" target="_blank" rel="noreferrer noopener">
-                    <img class="center-fit" src="images/linkedin.png" alt="linklog" />
-                </a>
-                <br />
-                <br />
-                <a href="https://twitter.com/bentejas" target="_blank" rel="noreferrer noopener">
-                    <img class="center-fit" src="images/twitter.png" alt="twitlog" />
-                </a>
+            
+            <div id="about">
+                <div class="sectionBox">
+                    <h3>Work Experience</h3>
+                    <div class="sectionContent">
+                        <h4>University of Windsor</h4>
+                        <h5>Web Content Developer</h5>
+                        <ul>
+                            <li>Designed and developed web pages using HTML, CSS, JS and a CMS</li>
+                            <li>Assited clients with web page requests</li>
+                            <li>Consistently adhere to W3C Accessbility Standards within a CMS environment (Drupal)</li>
+                        </ul>
+                        <h5>IT Service Desk</h5>
+                        <ul>
+                            <li>Assisted clients with IT related issues within both software and hardware</li>
+                            <li>Completed the installation of COVID-19 devices across campus</li>
+                            <li>Collaborated with a team on a daily basis regarding issues throughout the workday</li>
+                        </ul>
+                        <h5>Teaching Assistant</h5>
+                        <ul>
+                            <li>Assisted the professor and taught students within COMP-1400 (Intro to Programming)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sectionBox">
+                    <h3>Education</h3>
+                    <div class="sectionContent">
+                        <h4>University of Windsor</h4>
+                        <h5>Bachlor of Computer Science (Honours)</h5>
+                        <ul>
+                            <li>Taking classes with focus on web development and related abilities</li>
+                            <li>Consistently maintaining an average above 80%</li>
+                            <li>Please send an email to <a href="mailto:ben@bentejas.com?subject=Transcript request">ben@bentejas.com</a> to request a transcript from me.</li>
+                        </ul>
+                        <h4>Huron Heights Secondary School</h4>
+                        <h5>Ontario Secondary School Diploma</h5>
+                        <ul>
+                            <li>Graduated with Honours and an average surpassing 88%</li>
+                            <li>Was a member of the leadership program, as well as the music program</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sectionBox">
+                    <h3>Skills</h3>
+                    <div class="sectionContent">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Javascript</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>Java</li>
+                            <li>C/C++</li>
+                            <li>C#</li>
+                        </ul>
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>Git</li>
+                            <li>Content Management Systems</li>
+                            <li>Multiple IDEs (IntelliJ, Brackets)</li>
+                            <li>phpMyAdmin</li>
+                            <li>MySQL</li>
+                            <li>Word, PPT, Excel, Teams</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-        <div class="output">
-
         </div>
-        <script> src="randVar.js"</script>
-	</body>
+        
+        <div class="thanks">
+            <p>Thanks for looking at my site. <a href="projects.html">Follow this link to view my projects</a>. <br><br><a href="contact.html">Follow this link to send me a message</a> if you want to get in touch.</p>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <p id="socials">
+        <a href="https://ca.linkedin.com/in/benjamin-tejas-42a9691ba" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>&emsp;
+        <a href="https://github.com/bentejas" target="_blank" aria-label="Github"><i class="fa-brands fa-github"></i></a>&emsp;
+        <a href="https://twitter.com/bentejas" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </p>
+        <p><i class="fa-solid fa-copyright"></i> Copyright 2022, Benjamin Tejas.</p>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+    
 </html>
